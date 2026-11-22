@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Divulgar evento | Bororó Eventos</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="topo">
+
+        <a class="marca" href="index.html">
+            Bororó <strong>Eventos</strong>
+        </a>
+
+        <nav aria-label="Navegação principal">
+            <a href="index.html">Início</a>
+            <a href="eventos.html">Eventos</a>
+            <a href="cadastro.html">Organizadores</a>
+            <a class="nav-botao ativo" href="cadastrar-evento.html">
+                Divulgar evento
+            </a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="pagina-intro">
+
+            <span class="etiqueta">
+                COMPARTILHE COM A CIDADE
+            </span>
+
+            <h1>Divulgue seu evento</h1>
+
+            <p>
+                Preencha os detalhes para adicionar sua atividade à agenda.
+            </p>
+
+        </section>
+
+        <section class="form-area">
+
+            <form id="form-evento">
+
+                <label for="titulo">
+                    Título do evento
+                </label>
+
+                <input
+                    id="titulo"
+                    name="titulo"
+                    required
+                >
+
+                <label for="data">
+                    Data
+                </label>
+
+                <input
+                    id="data"
+                    name="data"
+                    type="date"
+                    required
+                >
+
+                <label for="local">
+                    Local
+                </label>
+
+                <input
+                    id="local"
+                    name="local"
+                    required
+                >
+
+                <label for="descricao">
+                    Descrição breve
+                </label>
+
+                <textarea
+                    id="descricao"
+                    name="descricao"
+                    rows="4"
+                    maxlength="400"
+                    required
+                ></textarea>
+
+                <label for="responsavel">
+                    Organizador
+                </label>
+
+                <input
+                    id="responsavel"
+                    name="responsavel"
+                    required
+                >
+
+                <button class="botao" type="submit">
+                    Publicar evento
+                </button>
+
+                <p
+                    id="mensagem-evento"
+                    class="mensagem"
+                    role="status"
+                ></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <a class="marcaFINAL" href="index.html">
+             Bororó Eventos
+        </a>
+
+        <p>
+            <span>©Gusttavo Leme - 28329257</span>
+        </p>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
